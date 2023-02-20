@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de notas</title>
+    <link rel="shortcut icon" href="imagens/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Teste de aprovação</h1>
+    </header>
+    <section>
+        <div id="all">
+
+           <div id="nota">
+            <p>1º Nota: <input type="number" name="1nota" id="txt1nota"  min="0" max="10" > (0 a 10,0)</p> 
+            <p>2º Nota: <input type="number" name="2nota" id="txt2nota" min="0" max="10"> (0 a 10,0)</p>
+            <p>3º Nota: <input type="number" name="3nota" id="txt3nota" min="0" max="10"> (0 a 10,0)</p>
+            <p>Bônus: <input type="number" name="bonus" id="txtbonus" min="0" max="10"> (0 a 1,0) </p> 
+            
+            </div>
+            
+            <div id="container">
+                <div id="valores">
+                    <select name="notas" id="notas" size="10">
+                    </select>
+                </div>
+                <div id="limpar">
+                    <input type="button" value="Limpar" onclick="limpar()">
+                </div>
+            </div>
+
+            <div >
+                <input type="button" value="Calcular" onclick="calcular()">
+            </div>
+        
+            <div id="res">
+                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; <a href="https://github.com/fernandokotinda"><em>FernandoKotinda</em></a></p>
+    </footer>
+    <br>
+    <script src="script.js"></script>
+</body>
+</html>
